@@ -11,7 +11,7 @@ def makeChange(coins, total):
     """
     if total <= 0:
        return 0
-    coins = sorted(coins, reverse=True)
+    coins = list(())
     coinTotal = 0;
     minCoins = 0;
     for c in coins:
