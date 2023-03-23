@@ -10,7 +10,7 @@ def makeChange(coins, total):
     a given amount total - using coins of different values"""
     if total <= 0:
         return 0
-    coins = sorted(coins)
+    coins = sorted(coins, reverse=True)
     coinTotal = 0
     minCoins = 0
     for coin in coins:
