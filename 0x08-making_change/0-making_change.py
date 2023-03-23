@@ -14,7 +14,7 @@ def makeChange(coins, total):
     coinTotal = 0
     minCoins = 0
     for coin in coins:
-        res = (total - coinTotal)//coin
+        res = (total - coinTotal)
         curTotal += res*coin
         minCoins += res
         if coinTotal == total:
