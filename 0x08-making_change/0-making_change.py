@@ -12,8 +12,8 @@ def makeChange(coins, total):
     if total <= 0:
        return 0
     coins = []
-    coinTotal = 1;
-    minCoins = 1;
+    coinTotal = 0;
+    minCoins = 0;
     for c in coins:
         res = (total - coinTotal)
         coinTotal += res*c
