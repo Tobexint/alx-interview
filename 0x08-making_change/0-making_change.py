@@ -11,12 +11,12 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
     coins = sorted(coins, reverse=True)
-    coinTotal = 0
+    curTotal = 0
     minCoins = 0
     for coin in coins:
-        res = (total - coinTotal)
-        curTotal += res*coin
-        minCoins += res
-        if coinTotal == total:
+        bal = (total - curTotal)//coin
+        curTotal += bal*coin
+        minCoins += bal
+        if curTotal == total:
             return minCoins
     return -1
